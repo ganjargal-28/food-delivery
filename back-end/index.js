@@ -5,7 +5,7 @@ const PORT = 8000;
 app.use(cors());
 app.get("/", (request, response) => {
   response.json({
-    right: "hello",
+    right: "hello"
   });
 });
 app.listen(PORT, () => {

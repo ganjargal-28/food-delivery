@@ -1,5 +1,5 @@
 export default async function Home() {
-  const response = await fetch(`https://food-delivery-u1gp.onrender.com`);
+  const response = await fetch(`${process.env.BACKEND_POINT}`);
   const data = await response.json();
   console.log("res", response);
 
