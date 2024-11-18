@@ -1,7 +1,15 @@
-export default async function Home() {
-  // const response = await fetch(`${process.env.BACKEND_POINT}`);
-  // const data = await response.json();
-  // console.log("res", response);
+"use client";
 
-  return <div> hello world</div>;
+import { Card } from "./_components/card/Card";
+import { Category } from "./_components/category/Category";
+import { Header } from "./_components/header/Header";
+import { Hero } from "./_components/Hero";
+
+export default function home() {
+  return (
+    <div>
+      <Hero />
+      <Category />
+    </div>
+  );
 }
